@@ -1,0 +1,68 @@
+
+<html>
+<head>
+   
+    <title>Contact Us</title>
+    
+</head>
+<body>
+    <h1 style="color:Tomato;">CSS</h1>
+    <p style="color:DodgerBlue;"> • Every statement must have a selector and a declaration. The declaration comes immediately after 
+        the selector and is contained in a pair of curly braces.
+         • The declaration is one or more properties separated by semicolons. 
+        • Each property has a property name followed by a colon and then the value for that property. There 
+        are many different types of values, but any given property can only take certain values as set down 
+        in the specification. 
+        • Sometimes a property can take a number of values, as in the font-family. The values in the list 
+        should be separated by a comma and a space. 
+        • Sometimes a value will have a unit as well as the actual value, as in the 1.3em.
+         • You must not put a space between the value and its unit. 6. As with HTML, white space can be used 
+        to make your style sheet easier to read and write
+         • A style sheet consists of one or more rules that describe how document elements should be 
+        displayed. A rule in CSS has two parts: the selector and the declaration. 
+        • The declaration also has two parts, the property and the value. 
+        • Let's take a look at a rule for a heading 1 style: h1 {font-family: verdan, "sans serif"; font-size: 1.3em}
+         • This expression is a rule that says every h1 tag will be verdan or other sans-serif font and the font 
+        size will be 1.3em. 
+        • Let's take a look at the different parts of this rule. 
+        • Selector {property1: some value; property2: some value;} 
+        • The declaration contains the property and value for the selector. 
+        • The property is the attribute you wish to change and each property can take a value. 
+        • The property and value are separated by a colon and surrounded by curly braces: body {background
+        color: black} I
+         • if the value of a property is more than one word, put quotes around that value: body {font-family: 
+        "sans serif";}
+         • If you wish to specify more than one property, you must use a semi-colon to separate each property. 
+        • This rule defines a paragraph that will have blue text that is centered. p {text-align: center; color: 
+        blue} You can group selectors.
+         • Separate each selector with a comma. The example below groups headers 1, 2, and 3 and makes 
+        them all yellow. h1, h2, h3 {color: yellow}</p>
+    <p style="color:MediumSeaGreen;"> CSS Modules
+        • CSS modules let you import your .CSS file into a JavaScript file with the CSS definitions as properties. 
+       • It also lets you use the compose property to extend and modularize style definitions.
+        • CSS was defined to style documents, not UI components. 
+       • The lack of modularity in CSS language makes it hard to maintain complex or legacy code. 
+       • Developers are afraid to make code changes since it's easy to break something when CSS definitions 
+       are global.
+        • CSS Modules solves these problems by limiting the scope to components. CSS Modules is not an 
+       official standard. 
+       • It's a community-led effort popularized by the ReactJS ecosystem.
+        • The problem of global scope is solved by CSS Modules since class names are local to the component. 
+       • The same class name can be used in another component with different styling. </p>
+    <h1>Contact Form</h1>
+    
+    <form class="contact-form" action="your_form_handler_url" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
