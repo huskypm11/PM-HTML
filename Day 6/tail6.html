@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS Positioning</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      height: 200vh; /* To make scrolling visible */
+    }
+  </style>
+</head>
+<body class="bg-gray-100 p-10">
+
+  <!-- Static Position -->
+  <div class="static bg-blue-500 text-white py-4 px-6 rounded mb-10">
+    <h3 class="text-xl font-bold">Static Position</h3>
+    <p>This element has <code>position: static;</code> (default behavior).</p>
+  </div>
+
+  <!-- Fixed Position -->
+  <div class="fixed top-5 right-5 bg-green-500 text-white py-4 px-6 rounded shadow-lg">
+    <h3 class="text-xl font-bold">Fixed Position</h3>
+    <p>This element has <code>position: fixed;</code> and is fixed to the top-right corner of the viewport.</p>
+  </div>
+
+  <!-- Absolute Position -->
+  <div class="relative bg-gray-500 text-white py-4 px-6 rounded mt-10 mb-10">
+    <h3 class="text-xl font-bold">Absolute Position (inside relative container)</h3>
+    <div class="absolute top-5 left-5 bg-orange-500 text-white py-2 px-4 rounded">
+      <p>This element has <code>position: absolute;</code> relative to the parent container with <code>position: relative;</code></p>
+    </div>
+  </div>
+
+  <!-- Relative Position -->
+  <div class="relative bg-red-500 text-white py-4 px-6 rounded mt-10">
+    <h3 class="text-xl font-bold">Relative Position</h3>
+    <p>This element has <code>position: relative;</code> and can be adjusted using top, right, bottom, or left.</p>
+    <div class="absolute top-5 left-5 bg-yellow-500 text-white py-2 px-4 rounded">
+      <p>This element is <code>position: absolute;</code> relative to the parent with <code>position: relative;</code></p>
+    </div>
+  </div>
+
+  <!-- Sticky Position -->
+  <div class="sticky top-0 bg-purple-500 text-white py-4 px-6 rounded mt-10">
+    <h3 class="text-xl font-bold">Sticky Position</h3>
+    <p>This element has <code>position: sticky;</code> and sticks to the top of the screen when scrolling.</p>
+  </div>
+
+</body>
+</html>
