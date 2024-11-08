@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    
+    body {
+        background-color: #f3f4f6;
+        color: #333;
+    }
+    
+    .header {
+        background: linear-gradient(135deg, #a066ff, #5b8cfa);
+        color: white;
+        padding: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        position: relative;
+        text-align: center;
+    }
+    
+    .header .profile-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .menu-icon, .notification-icon {
+        font-size: 20px;
+    }
+    
+    .profile-photo img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    
+    .upload-report {
+        background-color: #f3e1ff;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+    }
+    
+    .upload-report h3 {
+        color: #5b8cfa;
+    }
+    
+    .upload-button {
+        background-color: #000;
+        color: white;
+        padding: 10px 20px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+    
+    .recent-reports {
+        margin: 20px;
+    }
+    
+    .recent-reports h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .report-cards {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .report-card {
+        background-color: #e5f7ff;
+        padding: 15px;
+        border-radius: 10px;
+        flex: 1;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .report-date, .health-score {
+        font-size: 14px;
+    }
+    
+    .care-network {
+        margin: 20px;
+    }
+    
+    .care-network h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .network-list {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .network-item {
+        text-align: center;
+    }
+    
+    .network-item img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        background: #ffffff;
+        border-top: 1px solid #ddd;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .nav-item {
+        color: #5b8cfa;
+        font-size: 20px;
+        text-align: center;
+    }</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="header">
+    <div class="profile-info">
+        <div class="menu-icon">☰</div>
+        <div class="welcome-text">
+            <p>Welcome</p>
+            <h2>Robin Stewart</h2>
+            <p>Age: <span>38 yrs</span> | Gender: <span>Male</span> | User ID: <span>3356635915</span></p>
+        </div>
+        <div class="notification-icon">📧</div>
+        <div class="profile-photo">
+            <img src="profile.jpg" alt="Profile Picture">
+        </div>
+    </div>
+</header>
+
+<!-- Upload Report Section -->
+<section class="upload-report">
+    <div class="upload-content">
+        <h3>Start using Med Report</h3>
+        <p>Get vital information in an intuitive way required for better health & lifestyle of patients.</p>
+        <button class="upload-button">Upload Report</button>
+    </div>
+</section>
+
+<!-- Recent Reports Section -->
+<section class="recent-reports">
+    <h4>Recent Reports</h4>
+    <div class="report-cards">
+        <div class="report-card">
+            <p class="report-date">Date: 02 Dec 2022</p>
+            <h5>A Comprehensive Health Analysis Report</h5>
+            <p>Inner Health Diagnostic Centre</p>
+            <p class="health-score">Health Score: <span>63</span></p>
+        </div>
+        <div class="report-card">
+            <p class="report-date">Date: 22 Nov 2022</p>
+            <h5>Monthly Routine Checkup</h5>
+            <p>Dr. Robert Dunn</p>
+            <p class="health-score">Health Score: <span>81</span></p>
+        </div>
+    </div>
+</section>
+
+<!-- My Care Network Section -->
+<section class="care-network">
+    <h4>My Care Network</h4>
+    <div class="network-list">
+        <div class="network-item">
+            <img src="doctor1.jpg" alt="Dr. Steve John">
+            <p>Dr. Steve John</p>
+            <span>Endocrinologist</span>
+        </div>
+        <div class="network-item">
+            <img src="coach.jpg" alt="Juliana">
+            <p>Juliana</p>
+            <span>Health Coach</span>
+        </div>
+        <div class="network-item">
+            <img src="clinic.jpg" alt="STV Med">
+            <p>STV Med</p>
+            <span>D Clinic</span>
+        </div>
+        <div class="network-item">
+            <img src="doctor2.jpg" alt="Dr. Muling">
+            <p>Dr. Muling</p>
+            <span>Cardiologist</span>
+        </div>
+    </div>
+</section>
+
+<!-- Navigation Bar -->
+<nav class="navigation">
+    <a href="#" class="nav-item">🏠 Home</a>
+    <a href="#" class="nav-item">📁 Reports</a>
+    <a href="#" class="nav-item">❤️ Health</a>
+    <a href="#" class="nav-item">🔍 Search</a>
+    <a href="#" class="nav-item">⚙️ More</a>
+</nav>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+ 

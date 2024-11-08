@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS Comprehensive Example</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-10">
+
+  <!-- Container with margin, padding, and spacing -->
+  <div class="space-y-12 max-w-5xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+
+    <!-- (1) Fixed Width and Height with Text Alignment -->
+    <div class="w-1/2 h-32 bg-blue-500 text-white text-center flex items-center justify-center rounded">
+      1. 50% Width, Fixed Height, Center Aligned Text
+    </div>
+
+    <!-- (2) Minimum Width and Height -->
+    <div class="min-w-[200px] min-h-[100px] bg-green-500 text-white text-center flex items-center justify-center rounded">
+      2. Min Width (200px), Min Height (100px)
+    </div>
+
+    <!-- (3) Maximum Width and Height with Overflow Handling -->
+    <div class="max-w-lg max-h-40 bg-red-500 text-white text-center flex items-center justify-center overflow-hidden rounded">
+      3. Max Width (512px), Max Height (160px), Overflow Hidden
+    </div>
+
+    <!-- (4) Full Width with Min and Max Height -->
+    <div class="w-full min-h-[150px] max-h-[300px] bg-purple-500 text-white text-center flex items-center justify-center rounded">
+      4. Full Width, Min Height (150px), Max Height (300px)
+    </div>
+
+    <!-- (5) Responsive Width and Height Adjustments -->
+    <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-full sm:h-40 md:h-48 lg:h-56 xl:h-32 bg-yellow-500 text-white text-center flex items-center justify-center rounded">
+      5. Responsive Width & Height (Adjust Window Size)
+    </div>
+
+    <!-- (6) Scrollable Content with Fixed Width & Height -->
+    <div class="w-96 h-40 bg-gray-700 text-white p-4 overflow-y-scroll rounded">
+      <p>6. Scrollable Box with Fixed Width (384px) and Height (160px). Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id semper urna. Nullam ac orci ac libero varius facilisis. Nulla facilisi. Morbi egestas felis et ex tempor, sit amet elementum metus bibendum.</p>
+      <p>Curabitur quis ipsum a justo faucibus cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus efficitur mauris et risus vehicula ultricies.</p>
+    </div>
+
+    <!-- (7) Button with Padding, Margin, and Hover Effect -->
+    <div class="text-center mt-10">
+      <button class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-lg font-medium transition duration-300">
+        7. PM11
+      </button>
+    </div>
+
+    <!-- (8) Tailwind Typography with Margin and Padding -->
+    <div class="bg-teal-500 text-white p-6 rounded-lg mt-12">
+      <h2 class="text-2xl font-bold mb-4">8. Tailwind Typography Example</h2>
+      <p class="mb-6">This is a sample paragraph demonstrating the use of Tailwind's text utilities for font size, alignment, and color. The section has its own padding and margin for spacing.</p>
+      <ul class="list-disc list-inside">
+        <li>First point</li>
+        <li>Second point with more content</li>
+        <li>Third point to showcase list styling</li>
+      </ul>
+    </div>
+
+    <!-- Additional Section for Width Examples -->
+    <div class="space-y-8 max-w-3xl mx-auto">
+      
+      <!-- 50% Width -->
+      <div class="w-1/2 bg-blue-500 text-white text-center hi">
+        50% Width
+      </div>
+
+      <!-- Fixed Width (256px) -->
+      <div class="w-64 bg-green-500 text-white text-center py-4 rounded">
+        256px Width
+      </div>
+
+      <!-- Full Width -->
+      <div class="w-full bg-red-500 text-white text-center py-4 rounded">
+        Full Width
+      </div>
+
+      <!-- Responsive Width -->
+      <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-full bg-purple-500 text-white text-center py-4 rounded">
+        Responsive Width
+      </div>
+      
+    </div>
+
+    <!-- Additional Section for Spacing Example -->
+    <div class="space-y-10 max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md">
+      
+      <!-- 50% Width with Margin and Padding -->
+      <div class="w-1/2 mx-auto bg-blue-500 text-white text-center py-4 px-6 rounded mb-6">
+        50% Width
+      </div>
+
+      <!-- Fixed Width (256px) with Margin and Padding -->
+      <div class="w-64 mx-auto bg-green-500 text-white text-center py-6 px-4 rounded mt-8">
+        256px Width
+      </div>
+
+      <!-- Full Width with Spacing, Margin, and Padding -->
+      <div class="w-full bg-red-500 text-white text-center py-5 px-10 rounded mt-10 mb-10">
+        Full Width
+      </div>
+
+      <!-- Responsive Width with Margin and Padding -->
+      <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-full bg-purple-500 text-white text-center py-8 px-6 rounded mt-12">
+        Responsive Width
+      </div>
+
+      <!-- Button with Padding, Margin, and Hover Effect -->
+      <div class="text-center mt-14">
+        <button class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-lg font-medium transition duration-300">
+          Learn More
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
